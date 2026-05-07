@@ -86,8 +86,8 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>330</y>
+      <x>130</x>
+      <y>260</y>
       <width>49</width>
       <height>16</height>
      </rect>
@@ -99,8 +99,8 @@
    <widget class="QRadioButton" name="radioButton">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>320</y>
+      <x>310</x>
+      <y>260</y>
       <width>98</width>
       <height>24</height>
      </rect>
@@ -112,8 +112,8 @@
    <widget class="QRadioButton" name="radioButton_2">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>320</y>
+      <x>490</x>
+      <y>260</y>
       <width>98</width>
       <height>24</height>
      </rect>
@@ -126,7 +126,7 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>440</y>
+      <y>340</y>
       <width>49</width>
       <height>16</height>
      </rect>
@@ -138,8 +138,8 @@
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>430</y>
+      <x>370</x>
+      <y>340</y>
       <width>181</width>
       <height>26</height>
      </rect>
@@ -158,8 +158,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>500</y>
+      <x>110</x>
+      <y>460</y>
       <width>81</width>
       <height>26</height>
      </rect>
@@ -171,8 +171,8 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>500</y>
+      <x>260</x>
+      <y>460</y>
       <width>81</width>
       <height>26</height>
      </rect>
@@ -184,8 +184,8 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>500</y>
+      <x>420</x>
+      <y>460</y>
       <width>81</width>
       <height>26</height>
      </rect>
@@ -198,13 +198,26 @@
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>500</y>
+      <y>460</y>
       <width>81</width>
       <height>26</height>
      </rect>
     </property>
     <property name="text">
      <string>บันทึก</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>511</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>GroupBox</string>
     </property>
    </widget>
   </widget>

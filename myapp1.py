@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'sui.ui'
+## Form generated from reading UI file 'oo.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.11.0
 ##
@@ -16,9 +16,10 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QLabel, QLineEdit,
-    QMainWindow, QMenu, QMenuBar, QPushButton,
-    QRadioButton, QSizePolicy, QStatusBar, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QGroupBox, QLabel,
+    QLineEdit, QMainWindow, QMenu, QMenuBar,
+    QPushButton, QRadioButton, QSizePolicy, QStatusBar,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -53,33 +54,36 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setGeometry(QRect(380, 190, 191, 26))
         self.label_3 = QLabel(self.centralwidget)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(120, 330, 49, 16))
+        self.label_3.setGeometry(QRect(130, 260, 49, 16))
         self.radioButton = QRadioButton(self.centralwidget)
         self.radioButton.setObjectName(u"radioButton")
-        self.radioButton.setGeometry(QRect(340, 320, 98, 24))
+        self.radioButton.setGeometry(QRect(310, 260, 98, 24))
         self.radioButton_2 = QRadioButton(self.centralwidget)
         self.radioButton_2.setObjectName(u"radioButton_2")
-        self.radioButton_2.setGeometry(QRect(510, 320, 98, 24))
+        self.radioButton_2.setGeometry(QRect(490, 260, 98, 24))
         self.label_4 = QLabel(self.centralwidget)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(120, 440, 49, 16))
+        self.label_4.setGeometry(QRect(120, 340, 49, 16))
         self.comboBox = QComboBox(self.centralwidget)
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setGeometry(QRect(390, 430, 181, 26))
+        self.comboBox.setGeometry(QRect(370, 340, 181, 26))
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(130, 500, 81, 26))
+        self.pushButton.setGeometry(QRect(110, 460, 81, 26))
         self.pushButton_2 = QPushButton(self.centralwidget)
         self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(270, 500, 81, 26))
+        self.pushButton_2.setGeometry(QRect(260, 460, 81, 26))
         self.pushButton_3 = QPushButton(self.centralwidget)
         self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setGeometry(QRect(410, 500, 81, 26))
+        self.pushButton_3.setGeometry(QRect(420, 460, 81, 26))
         self.pushButton_4 = QPushButton(self.centralwidget)
         self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setGeometry(QRect(550, 500, 81, 26))
+        self.pushButton_4.setGeometry(QRect(550, 460, 81, 26))
+        self.groupBox = QGroupBox(self.centralwidget)
+        self.groupBox.setObjectName(u"groupBox")
+        self.groupBox.setGeometry(QRect(90, 30, 511, 351))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -120,36 +124,34 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u0e25\u0e1a", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"\u0e41\u0e01\u0e49\u0e44\u0e02", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01", None))
+        self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"GroupBox", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
     # retranslateUi
 
-
+# --- เติมส่วนนี้ต่อท้ายไฟล์เดิมของคุณ ---
 import sys
-# เปลี่ยนจาก PyQt5 เป็น PySide6 ตามที่เครื่องคุณใช้
-from PySide6.QtWidgets import QApplication, QMainWindow
-from PySide6.QtGui import QAction
 
-# --- ส่วนประกาศฟังก์ชัน ---
-def say_hello():
+# ส่วนประกาศ Slot (ฟังก์ชัน)
+def say_hello(self):
     print("สวัสดีครับ! นักศึกษา")
 
 if __name__ == "__main__":
+    # 1. สร้างตัวจัดการแอปพลิเคชัน
     app = QApplication(sys.argv)
-    
-    # สร้างหน้าต่างหลัก
+
+    # 2. สร้างหน้าต่างหลัก (Container)
     MainWindow = QMainWindow()
-    
-    # เรียกใช้ Class UI (เช็คชื่อ Ui_MainWindow ให้ตรงกับในไฟล์คุณ)
+
+    # 3. สร้างอินสแตนซ์ UI ของคุณ แล้วโหลดใส่หน้าต่างหลัก
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
 
-    # --- ส่วนเชื่อมต่อปุ่ม (แก้ไขให้เข้ากับตัวแปร ui) ---
-    # ถ้าในไฟล์คุณมีปุ่มชื่อ pushButton ให้ใช้บรรทัดนี้
-    try:
-        ui.pushButton.clicked.connect(say_hello)
-    except AttributeError:
-        print("หาปุ่ม pushButton ไม่เจอ กรุณาเช็คชื่อ objectName ใน Qt Designer")
+    # --- Signal / Slot ---
+    # สร้างปุ่มมา กดแล้วแสดงข้อความ
+    ui.pushButton.clicked.connect(lambda: say_hello(ui))
 
+    # 4. โชว์หน้าต่าง
     MainWindow.show()
-    sys.exit(app.exec()) # PySide6 ใช้ exec() ไม่ต้องมีขีดล่าง
 
+    # 5. รันลูปการทำงาน (Event Loop)
+    sys.exit(app.exec())
